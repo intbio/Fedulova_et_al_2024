@@ -131,6 +131,29 @@ $(function() {
                                 return data;
                             }
                         },
+                        {
+                            targets: 6,
+                            render: function (data, type, row, meta)
+                            {
+                                if (type === 'display') {
+                                    let d = '';
+                                    data.split(',').forEach( (el) => {
+                                        el = el.trim();
+                                        if (el.length == 4) {
+                                            d = d+ "<a class='tooltip' href='https://www.rcsb.org/structure/" + el + "' target='_blank'>" + el  +
+                                           "<br><span><img src='https://cdn.rcsb.org/images/structures/" + el.toLowerCase() + "_assembly-1.jpeg' style='max-height: 450px; max-width: 450px;'></span></a>";
+
+                                        } else {
+                                            d = d+el;
+                                        }
+                                        
+                                    })
+                                        data=d;
+                                        // data = "<a href='" + data + "' target='_blank'> Yes </a>";
+                                };
+                                return data;
+                            }
+                        },
                         
                         {
 							"targets": [3,4],
