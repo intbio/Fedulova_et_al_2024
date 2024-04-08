@@ -6,8 +6,8 @@
 [https://github.com/intbio/Fedulova_et_al_2024](https://github.com/intbio/Fedulova_et_al_2024)
 
 ### Interactive materials
-- [Interactive table of all-atom MD simulation studies of nucleosomes](MD_table)
-- [Interactive table of coarse grained simulation studies of nucleosomes](CG_table)
+- [Interactive table of all-atom MD simulations studies of nucleosomes](MD_table)
+- [Interactive table of coarse grained simulations studies of nucleosomes](CG_table)
 
 
 
